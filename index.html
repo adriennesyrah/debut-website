@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Syrah's 18th Birthday</title>
+
+<style>
+    body {
+        font-family: "Georgia", serif;
+        background: linear-gradient(180deg, #ffe6f2, #ffd6ec, #ffecf7);
+        margin: 0;
+        padding: 0;
+        color: #5a2350;
+        animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    header {
+        background: linear-gradient(135deg, #ff72b6, #ff9bd6, #ffc1e3);
+        color: white;
+        text-align: center;
+        padding: 70px 20px;
+        box-shadow: 0 4px 20px rgba(255, 105, 180, 0.3);
+        animation: slideDown 1.3s ease;
+    }
+
+    @keyframes slideDown {
+        from {transform: translateY(-40px); opacity: 0;}
+        to {transform: translateY(0); opacity: 1;}
+    }
+
+    header h1 {
+        font-size: 54px;
+        margin: 0;
+    }
+
+    .section {
+        max-width: 850px;
+        margin: auto;
+        background: white;
+        padding: 40px;
+        border-radius: 25px;
+        margin-top: 35px;
+        box-shadow: 0 6px 25px rgba(255, 105, 180, 0.25);
+        animation: fadeUp 1.2s ease;
+    }
+
+    @keyframes fadeUp {
+        from {transform: translateY(40px); opacity: 0;}
+        to {transform: translateY(0); opacity: 1;}
+    }
+
+    .title {
+        font-size: 30px;
+        text-align: center;
+        color: #d63384;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    .details p {
+        font-size: 19px;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    /* Countdown */
+    #countdown {
+        font-size: 30px;
+        text-align: center;
+        color: #b0236f;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    /* Slideshow */
+    .slideshow-container {
+        max-width: 720px;
+        position: relative;
+        margin: auto;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(255, 105, 180, 0.3);
+    }
+
+    .slide {
+        display: none;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 430px;
+        object-fit: cover;
+    }
+
+    .fade {
+        animation: fadeEffect 1.5s ease;
+    }
+
+    @keyframes fadeEffect {
+        from {opacity: 0.4;}
+        to {opacity: 1;}
+    }
+
+    .rsvp-btn {
+        display: block;
+        width: max-content;
+        margin: 25px auto;
+        padding: 12px 35px;
+        background: #ff4fa3;
+        color: white;
+        text-decoration: none;
+        border-radius: 35px;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+        transition: 0.3s;
+    }
+
+    .rsvp-btn:hover {
+        background: #e94491;
+        box-shadow: 0 6px 18px rgba(255, 105, 180, 0.4);
+        transform: scale(1.05);
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px;
+        margin-top: 30px;
+        color: #8b3c73;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Background Music -->
+<audio autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_7645105f83.mp3?filename=romantic-piano-112188.mp3" type="audio/mpeg">
+</audio>
+
+<header>
+    <h1>Adrienne Syrah De Vera</h1>
+    <p style="font-size:20px">Come join Syrah's Royal 18th celebration @ Waterfront Hotel & Casino</p>
+</header>
+
+<!-- Countdown Timer -->
+<div class="section">
+    <h2 class="title">Countdown to the Royal Celebration</h2>
+    <div id="countdown">Loading...</div>
+</div>
+
+<!-- Event Details -->
+<div class="section">
+    <h2 class="title">Event Details</h2>
+    <div class="details">
+        <p>📅 <b>Date:</b> December 7, 2025</p>
+        <p>🕕 <b>Time:</b> 6:00 PM</p>
+        <p>📍 <b>Venue:</b> Baltic Balearic Ballroom, LG Floor,<br>
+        Waterfront Hotel & Casino, Lahug, Cebu City</p>
+        <p>👑 <b>Theme:</b> Whimsical Royal</p>
+        <p>👗 <b>Dress Code:</b> Formal Attire</p>
+    </div>
+</div>
+
+<!-- Slideshow Gallery -->
+<div class="section">
+    <h2 class="title">Gallery</h2>
+
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="https://via.placeholder.com/800x430?text=Photo+1">
+        </div>
+        <div class="slide fade">
+            <img src="https://via.placeholder.com/800x430?text=Photo+2">
+        </div>
+        <div class="slide fade">
+            <img src="https://via.placeholder.com/800x430?text=Photo+3">
+        </div>
+    </div>
+</div>
+
+<!-- Program -->
+<div class="section">
+    <h2 class="title">Program</h2>
+    <p style="text-align:center; font-size:18px;">
+        ✨ Placeholder for Grand Entrance<br>
+        ✨ Placeholder for 18 Roses<br>
+        ✨ Placeholder for 18 Candles<br>
+        ✨ Placeholder for 18 Treasures<br>
+        ✨ Placeholder for Special Performances<br>
+        ✨ Placeholder for Closing Toast<br>
+    </p>
+</div>
+
+<!-- RSVP -->
+<div class="section">
+    <h2 class="title">RSVP</h2>
+    <a class="rsvp-btn" href="#" target="_blank">Click here to RSVP</a>
+    <p style="text-align:center; font-size:14px; color:#a44c7a;">
+        (Replace the link with your Google Form)
+    </p>
+</div>
+
+<footer>
+    © 2025 Syrah's 18th Celebration — Website Invitation
+</footer>
+
+<!-- JS: Countdown + Slideshow -->
+<script>
+    // Countdown Timer
+    const eventDate = new Date("Dec 7, 2025 18:00:00").getTime();
+    setInterval(function() {
+        let now = new Date().getTime();
+        let distance = eventDate - now;
+
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown").innerHTML =
+            days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+    }, 1000);
+
+    // Slideshow
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+        let slides = document.getElementsByClassName("slide");
+        for (let i = 0; i < slides.length; i++) slides[i].style.display = "none";
+        slideIndex++;
+        if (slideIndex > slides.length) slideIndex = 1;
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000);
+    }
+</script>
+
+</body>
+</html>
